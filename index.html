@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css">
     <title>Pesquisa SenaiTec</title>
 </head>
 <body>
-    <header>
-        <h1>Pesquisa SenaiTec</h1>
-    </header>
-    <section>
+    <main> 
+        <header>
+            <img src="./img/logo.png" alt="Logo SenaiTec" width="200px" height="200px">
+            <h1>Pesquisa SenaiTec</h1>
+        </header>
+            <section>
         <form action="index.html" method="get">
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -39,17 +46,88 @@
             <input type="file" name="file" id="file">
 
 
-
-
-
-
-
             </fieldset>
 
 
+
+
+            <fieldset>
+                <legend>Perfil</legend>
+                    <label for="userGender">Gênero:</label>
+                    <input type="radio" name="userGender" id="userGenderMale" value="male">
+                    <label for="userGenderMale">Masculino</label>
+                    <input type="radio" name="userGender" id="userGenderFemale" value="female">
+                    <label for="userGenderFemale">Feminino</label>
+
+
+                    <br>
+                    <label for="userMaritalStatus">Estado Civil:</label>
+                    <select name="userMaritalStatus" id="userMaritalStatus">
+                        <option value="single">Solteiro(a)</option>
+                        <option value="married">Casado(a)</option>
+                        <option value="divorced">Divorciado(a)</option>
+                        <option value="widowed">Viúvo(a)</option>
+                    </select>
+
+                    <br>
+                    <label for="userState">Estado(UF):</label>
+                    <input type="text" name="userState" id="userState">
+
+                    <br>
+                    <label for="userCity">Cidade:</label>
+                    <input type="text" name="userCity" id="userCity">
+            </fieldset>
+
+
+            <fieldset> 
+                <legend>Hábitos</legend>
+                    <label for="userSocialMedia">Redes Sociais:</label>
+                    <input type="text" name="userSocialMedia" id="userSocialMedia">
+                    
+                    <br>
+                    <label for="userStyle">Estilo Musical:</label>
+                    <input type="text" name="userStyle" id="userStyle">
+
+                    <br>
+                    <label for="userFavoriteColor">Cor Favorita:</label>
+                    <input type="text" name="userFavoriteColor" id="userFavoriteColor">
+            </fieldset>
+            
+            <fieldset> 
+                <legend>Opinião</legend>
+                    <label for="userOpinion">Escala de satisfação:</label>
+                    <input type="range" name="userOpinion" id="userOpinion" min="0" max="10">
+
+                    <br>
+                    <label for="userFeedback">Comentário Aberto:</label>
+                    <textarea name="userFeedback" id="userFeedback"></textarea>
+                </fieldset>
+            
+
+
+                <fieldset> 
+                    <legend>Confirmações</legend>
+                    <label for="userTerms">Consentimento obrigatório (LGPD):</label>
+                    <br>
+                    <input type="checkbox" name="userTerms" id="userTerms" value="accepted">
+                    <label for="userTerms">Li e concordo com os termos de uso e política de privacidade.</label>
+                
+                    <br>
+                    <label for="userNewsletter">Deseja receber resultados:</label>
+                    <br>
+                    <input type="checkbox" name="userNewsletter" id="userNewsletter" value="accepted">
+                    <label for="userNewsletter">Sim</label>
+                </fieldset>
+
+
+
+
             <br>
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar e limpar</button>
+            
+
         </form>
-    </section>
+            </section>
+    </main>
 </body>
 </html>
