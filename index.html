@@ -107,38 +107,52 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-
+                    
                     <br>
                     <label for="userCity">Cidade:</label>
                     <input type="text" name="userCity" id="userCity" placeholder="Digite sua cidade">
-            </fieldset>
-
-
-            <fieldset> 
-                <legend>Hábitos</legend>
+                </fieldset>
+                
+                
+                <fieldset> 
+                    <legend>Hábitos</legend>
                     <label for="userSocialMedia1">Instagram</label>
                     <input type="checkbox" name="userSocialMedia1" id="userSocialMedia1">
 
+                    <br>
                     <label for="userSocialMedia2">Facebook</label>
                     <input type="checkbox" name="userSocialMedia2" id="userSocialMedia2">
 
+                    <br>
                     <label for="userSocialMedia3">Twitter</label>
                     <input type="checkbox" name="userSocialMedia3" id="userSocialMedia3">
 
+                    <br>
                     <label for="userSocialMedia4">TikTok</label>
                     <input type="checkbox" name="userSocialMedia4" id="userSocialMedia4">
 
                     <br>
-                    <label for="userStyle">Estilo Musical:</label>
-                    <input type="" name="userStyle" id="userStyle">
+                    <label for="userMusicStyle">Estilo Musical:</label>
+                    <input list="userMusicStyles" name="userMusicStyle" id="userMusicStyle">
+                    <datalist id="userMusicStyles">
+                        <option value="Rock Alternativo">
+                        <option value="Blues">
+                        <option value="Música Clássica">
+                        <option value="Pop">
+                        <option value="Funk">
+                        <option value="MPB">
+                        <option value="Samba">
+                        <option value="Sertanejo">
+                    </datalist>
 
                     <br>
                     <label for="userFavoriteColor">Cor Favorita:</label>
-                    <input type="color" name="userFavoriteColor" id="userFavoriteColor">
+                    <input type="color" name="userFavoriteColor" id="userFavoriteColor" value="#ff0000">
+
             </fieldset>
             
             <fieldset> 
-                <legend>Opinião</legend>
+                <legend>Satisfação</legend>
                     <label for="userOpinion">Escala de satisfação:</label>
                     <input type="range" name="userOpinion" id="userOpinion" min="0" max="5" step="1">
 
