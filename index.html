@@ -53,16 +53,22 @@
 
             <fieldset>
                 <legend>Perfil</legend>
-                    <label for="userGender">Gênero:</label>
+                    <p>Gênero:</p>
+                    <br>
                     <input type="radio" name="userGender" id="userGenderMale" value="male">
                     <label for="userGenderMale">Masculino</label>
+                    <br>
                     <input type="radio" name="userGender" id="userGenderFemale" value="female">
                     <label for="userGenderFemale">Feminino</label>
+                    <br>
+                    <input type="radio" name="userGender" id="userGenderNone" value="none">
+                    <label for="userGenderNone">Prefiro não informar</label>
 
 
                     <br>
                     <label for="userMaritalStatus">Estado Civil:</label>
                     <select name="userMaritalStatus" id="userMaritalStatus">
+                        <option value="">Selecione...</option>
                         <option value="single">Solteiro(a)</option>
                         <option value="married">Casado(a)</option>
                         <option value="divorced">Divorciado(a)</option>
@@ -71,32 +77,70 @@
 
                     <br>
                     <label for="userState">Estado(UF):</label>
-                    <input type="text" name="userState" id="userState">
+                    <select name="userState" id="userState" list="states">
+                        <option value="">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
 
                     <br>
                     <label for="userCity">Cidade:</label>
-                    <input type="text" name="userCity" id="userCity">
+                    <input type="text" name="userCity" id="userCity" placeholder="Digite sua cidade">
             </fieldset>
 
 
             <fieldset> 
                 <legend>Hábitos</legend>
-                    <label for="userSocialMedia">Redes Sociais:</label>
-                    <input type="text" name="userSocialMedia" id="userSocialMedia">
-                    
+                    <label for="userSocialMedia1">Instagram</label>
+                    <input type="checkbox" name="userSocialMedia1" id="userSocialMedia1">
+
+                    <label for="userSocialMedia2">Facebook</label>
+                    <input type="checkbox" name="userSocialMedia2" id="userSocialMedia2">
+
+                    <label for="userSocialMedia3">Twitter</label>
+                    <input type="checkbox" name="userSocialMedia3" id="userSocialMedia3">
+
+                    <label for="userSocialMedia4">TikTok</label>
+                    <input type="checkbox" name="userSocialMedia4" id="userSocialMedia4">
+
                     <br>
                     <label for="userStyle">Estilo Musical:</label>
-                    <input type="text" name="userStyle" id="userStyle">
+                    <input type="" name="userStyle" id="userStyle">
 
                     <br>
                     <label for="userFavoriteColor">Cor Favorita:</label>
-                    <input type="text" name="userFavoriteColor" id="userFavoriteColor">
+                    <input type="color" name="userFavoriteColor" id="userFavoriteColor">
             </fieldset>
             
             <fieldset> 
                 <legend>Opinião</legend>
                     <label for="userOpinion">Escala de satisfação:</label>
-                    <input type="range" name="userOpinion" id="userOpinion" min="0" max="10">
+                    <input type="range" name="userOpinion" id="userOpinion" min="0" max="5" step="1">
 
                     <br>
                     <label for="userFeedback">Comentário Aberto:</label>

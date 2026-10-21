@@ -11,7 +11,7 @@ body {
 main { 
     width: 100%;
     max-width: 700px; 
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 header { 
@@ -51,6 +51,32 @@ input {
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto; 
+}
+
+input[type="range"] {
+    width: 100%; 
+    margin-bottom: 10px; 
+
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+}
+
+p { 
+    margin-bottom: 10px; 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
 
 
 button { 
