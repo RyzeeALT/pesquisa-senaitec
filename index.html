@@ -18,16 +18,16 @@
             <h1>Pesquisa SenaiTec</h1>
         </header>
             <section>
-        <form action="index.html" method="get">
+        <form action="https://formspree.io/f/xyeeyqjr" method="post">
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 
             <label for="userName">Nome</label>
-            <input type="text" name="userName" id="userName">
+            <input type="text" name="userName" id="userName" required>
 
             <br>
             <label for="UserAge">Idade:</label>
-            <input type="number" name="UserAge" id="UserAge">
+            <input type="number" name="UserAge" id="UserAge" required>
 
             <br>
             <label for="userBirthDate">Data de Nascimento:</label>
@@ -35,7 +35,7 @@
 
             <br>
             <label for="userEmail">E-mail:</label>
-            <input type="email" name="userEmail" id="userEmail">
+            <input type="email" name="userEmail" id="userEmail" required>
 
             <br>
             <label for="userPhone">Telefone:</label>
@@ -77,7 +77,7 @@
 
                     <br>
                     <label for="userState">Estado(UF):</label>
-                    <select name="userState" id="userState" list="states">
+                    <select name="userState" id="userState" list="states" required>
                         <option value="">Selecione...</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -158,34 +158,34 @@
 
                     <br>
                     <label for="userFeedback">Comentário Aberto:</label>
+                    <br>
                     <textarea name="userFeedback" id="userFeedback"></textarea>
                 </fieldset>
             
 
-
                 <fieldset> 
                     <legend>Confirmações</legend>
-                    <label for="userTerms">Consentimento obrigatório (LGPD):</label>
+                    <p>Consentimento obrigatório (LGPD):</p>
+                    <label for="userTerms">Eu aceito participar da pesquisa.</label>
+                    <input type="checkbox" name="userTerms" id="userTerms" value="yes" required>
+
+
                     <br>
-                    <input type="checkbox" name="userTerms" id="userTerms" value="accepted">
-                    <label for="userTerms">Li e concordo com os termos de uso e política de privacidade.</label>
-                
-                    <br>
-                    <label for="userNewsletter">Deseja receber resultados:</label>
-                    <br>
-                    <input type="checkbox" name="userNewsletter" id="userNewsletter" value="accepted">
-                    <label for="userNewsletter">Sim</label>
+                    <label for="userNewsletter">Deseja receber resultados por email?:</label>
+                    <input type="checkbox" name="userNewsletter" id="userNewsletter" value="email">
                 </fieldset>
 
 
 
 
-            <br>
-            <button type="submit">Enviar e limpar</button>
+                <br>
+                <button type="submit">Enviar</button>
+                <br>
+                <button type="reset">Limpar</button>
             
 
-        </form>
-            </section>
+            </form>
+        </section>
     </main>
 </body>
 </html>
